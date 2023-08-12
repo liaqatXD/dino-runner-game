@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#box1 {
+  position: relative;
+  top: 8px;
+}
+#box2 {
+  position: relative;
+  top: 11px;
+}
+
+img {
+  position: relative;
+  transition: 0.3s;
+}
+
+.cactus {
+  animation-name: cactus;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#canvas {
+  display: flex;
+  height: 300px;
+  position: relative;
+  top: 0%;
+  margin: 0 20%;
+  justify-content: space-between;
+  background-image: url("images/t-rex-background.png");
+  align-items: center;
+  padding: 25px 80px;
+  border-radius: 10px;
+}
+h2 {
+  font-family: "ubuntu mono";
+  color: gray;
+  margin: 60px 25%;
+  text-align: end;
+  position: relative;
+  top: 110px;
+  z-index: 1;
+}
+
+@keyframes cactus {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(-700px);
+  }
+}
+#pause {
+  width: 80px;
+}
+
+.hidden {
+  visibility: hidden;
+}
